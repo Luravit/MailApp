@@ -4,15 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/color_background"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="388dp"
+        android:layout_height="66dp"
+        android:paddingStart="@dimen/padding_7dp"
+        android:paddingEnd="@dimen/padding_7dp"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:textSize="@dimen/text_size_22"
+        android:autofillHints="title"
+        android:hint="@string/title"
+        android:textStyle="bold"
+        android:ems="10"
+        android:background="@color/color_background_title"
+        android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="388dp"
+        android:layout_height="66dp"
+        android:paddingStart="@dimen/padding_7dp"
+        android:paddingEnd="@dimen/padding_7dp"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_22"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:textSize="@dimen/text_size_22"
+        android:autofillHints="no"
+        android:textStyle="bold"
+        android:ems="10"
+        android:background="@color/color_background_title"
+        android:hint="@string/str_to"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="388dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="@dimen/margin_12"
+        android:layout_marginTop="@dimen/text_size_22"
+        android:layout_marginEnd="@dimen/margin_12"
+        android:autofillHints="no"
+        android:paddingStart="@dimen/padding_7dp"
+        android:paddingEnd="@dimen/padding_7dp"
+        android:textStyle="bold"
+        android:ems="10"
+        android:background="@color/color_background_title"
+        android:gravity="top"
+        android:hint="@string/str_write_here"
+        android:inputType="text"
+        android:textSize="@dimen/text_size_19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+
+    <Button
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="162dp"
+        android:textStyle="bold"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="162dp"
+        android:text="@string/str_send"
+        android:backgroundTint="@color/color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3">
+
+    </Button>
 </androidx.constraintlayout.widget.ConstraintLayout>
